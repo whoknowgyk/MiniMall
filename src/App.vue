@@ -11,6 +11,26 @@ export default {
   name: 'App',
   components: {
   },
+  data(){
+    return {
+      res:{},
+    }
+  },
+  mounted(){
+    // 本地加载请求静态json文件的形式
+    // this.axios.get('/mock/user/login.json').then((res)=>{
+    //   this.res = res;
+    // });
+    // 通过postman实现数据mock
+    this.axios.get('/user/login').then((res)=>{
+      this.res = res;
+    });
+    // 本地集成mockjs实现数据mock
+    // 代码层面直接拦截 没有发送真正的请求
+    // this.axios.get('/user/login').then((res)=>{
+    //   this.res = res;
+    // });
+  }
 }
 </script>
 
