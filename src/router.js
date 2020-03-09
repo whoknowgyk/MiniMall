@@ -9,7 +9,7 @@ import Order from './pages/order'
 import OrderConfirm from './pages/orderConfirm'
 import OrderList from './pages/orderList'
 import OrderPay from './pages/orderPay'
-import AliPay from './pages/aliPay.vue'
+import AliPay from './pages/alipay'
 
 // 加载插件
 Vue.use(Router);
